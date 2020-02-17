@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'messagepage.apps.MessagepageConfig',
     'uploadpage.apps.UploadpageConfig',
     'searchpage.apps.SearchpageConfig',
+    'createaccountpage.apps.CreateaccountpageConfig',
 ]
 
 MIDDLEWARE = [
