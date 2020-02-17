@@ -171,6 +171,10 @@ li a:hover {
     height: auto;
 }
 
+.card {
+    border: transparent !important;
+}
+
 
  /*부모 div 는 display: flex; */
 /*.span-icons {*/

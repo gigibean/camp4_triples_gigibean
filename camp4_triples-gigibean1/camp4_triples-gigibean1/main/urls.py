@@ -22,4 +22,6 @@ urlpatterns = [
     path('profile/', include('profilepage.urls')),
     path('message/', include('messagepage.urls')),
     path('upload/', include('uploadpage.urls')),
+    path('search/', include('searchpage.urls')),
 ]
+
