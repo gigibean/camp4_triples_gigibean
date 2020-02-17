@@ -21,4 +21,5 @@ urlpatterns = [
     path('main/', include('mainpage.urls')),
     path('profile/', include('profilepage.urls')),
     path('message/', include('messagepage.urls')),
+    path('upload/', include('uploadpage.urls')),
 ]

@@ -164,3 +164,19 @@ li a:hover {
 .show {
     display: block;
 }
+
+.object {
+    display: inherit;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+
+ /*부모 div 는 display: flex; */
+/*.span-icons {*/
+/*    width: -webkit-fill-available;*/
+/*    height: auto;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    margin: 30px;*/
+/*}*/

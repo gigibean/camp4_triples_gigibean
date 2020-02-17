@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'mainpage.apps.MainpageConfig',
     'profilepage.apps.ProfilepageConfig',
     'messagepage.apps.MessagepageConfig',
+    'uploadpage.apps.UploadpageConfig',
 ]
 
 MIDDLEWARE = [
