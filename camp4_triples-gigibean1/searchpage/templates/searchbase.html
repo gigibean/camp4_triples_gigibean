@@ -6,26 +6,25 @@
 <link rel="stylesheet" media="mediatype screen and (max-width: 940px)" href="{% static '/css/search.css' %}">
 {% endblock %}
 {% block content %}
-<div class="main-div">
-    <div class="wrapper">
-        <div class="grid-one">
-            <div>
-                <h1>Search result for "<span>other user</span>"</h1>
-            </div>
+
+<div class="wrapper">
+    <div class="grid-one">
+        <div>
+            <h1>Search result for "<span>other user</span>"</h1>
         </div>
-        <div class="grid-two>">
-            <div class="menu--bar-without-url">
-                <ul>
-                    <li><a onclick="clickEverything()" id="everything" style="color: #F2A1A1;">Everything</a></li>
-                    <li><a onclick="clickTracks()" id="tracks">Tracks</a></li>
-                    <li><a onclick="clickArtist()" id="artist">Artist</a></li>
-                </ul>
-            </div>
+    </div>
+    <div class="grid-two>">
+        <div class="menu--bar-without-url">
+            <ul>
+                <li><a onclick="clickEverything()" id="everything" style="color: #F2A1A1;">Everything</a></li>
+                <li><a onclick="clickTracks()" id="tracks">Tracks</a></li>
+                <li><a onclick="clickArtist()" id="artist">Artist</a></li>
+            </ul>
         </div>
-        <div class="grid-three">
-            {% block searchcontent %}
-            {% endblock %}
-        </div>
+    </div>
+    <div class="grid-three">
+        {% block searchcontent %}
+        {% endblock %}
     </div>
 </div>
 <script>

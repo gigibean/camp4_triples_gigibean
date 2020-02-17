@@ -34,6 +34,10 @@
                     <input type="submit" value=" " name="search-bar-submit" id="search-bar-submit">
                 </form>
             </li>
+            <!--            if user is not authenticated-->
+            <li class="nav-item" id="nav-btn-8"><a href="#id01" class="nav-link">sign in</a></li>
+            <li class="nav-item" id="nav-btn-9"><a href="#id02" class="nav-link">create account</a></li>
+
 
             <li class="nav-item" id="nav-btn-4"><a class="nav-link">user</a></li>
             <li class="nav-item" id="nav-btn-5"><a class="nav-link">upload</a></li>
@@ -85,7 +89,118 @@
     }
 </script>
 
-{% block content %}
-{% endblock %}
+<div class="main-div">
+    <div id="id01" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-container modal-header-1">
+                    <p>Sign in</p>
+                </header>
+                <form>
+                    <div class="modal-container">
+                        <div class="modal-wrapper">
+                            <div class="modal-grid-one">
+                                <p>Start with</p>
+                                <p style="font-size: 18px">Social account</p>
+                                <div>
+                                    <a>
+                                        <object type="image/svg+xml" data="/static/imgs/assets/google.svg"
+                                                class="object google" style="width: 20%"></object>
+                                    </a>
+                                    <a>
+                                        <object type="image/svg+xml" data="/static/imgs/assets/facebook.svg"
+                                                class="object facebook" style="width: 20%"></object>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-grid-two">
+                                <div>
+
+                                    <div>
+                                        <label for="createaccountemail" style="font-size: 18px">Enter your email</label>
+                                        <input id="createaccountemail" type="email" style="font-size: 18px">
+                                    </div>
+                                    <div>
+                                        <label for="createaccountpassword" style="font-size: 18px">password</label>
+                                        <input id="createaccountpassword" type="password" style="font-size: 18px">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-grid-three">
+                                    <div><!--                                    json 으로 dump? or form submit? -->
+<!--                                        <object type="image/svg+xml" data="../static/imgs/assets/continue-btn.svg"-->
+<!--                                                class="object" style="width: 90%; margin-left: 5%;"></object>-->
+                                        <input type="submit" value="" style="background-image: url(/static/imgs/assets/done-btn.svg)" class="createaccount-btn">
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="closebtn">x</a>
+    </div>
+
+    <div id="id02" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-container modal-header-1">
+                    <p>Create account</p>
+                </header>
+                <form>
+                    <div class="modal-container">
+                        <div class="modal-wrapper">
+                            <div class="modal-grid-one">
+                                <p>Start with</p>
+                                <p style="font-size: 18px">Social account</p>
+                                <div>
+                                    <a>
+                                        <object type="image/svg+xml" data="/static/imgs/assets/google.svg"
+                                                class="object google" style="width: 20%">
+                                        </object>
+                                    </a>
+                                    <a>
+                                        <object type="image/svg+xml" data="/static/imgs/assets/facebook.svg"
+                                                class="object facebook" style="width: 20%"></object>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="modal-grid-two">
+                                <div>
+
+                                    <div>
+                                        <label for="signinemail" style="font-size: 18px">Enter your email</label>
+                                        <input id="signinemail" type="email" style="font-size: 18px">
+                                    </div>
+                                    <div>
+                                        <label for="signinpassword" style="font-size: 18px">password</label>
+                                        <input id="signinpassword" type="password" style="font-size: 18px">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-grid-three">
+                                    <div><!--                                    json 으로 dump? or form submit? -->
+<!--                                        <object type="image/svg+xml" data="../static/imgs/assets/continue-btn.svg"-->
+<!--                                                class="object" style="width: 90%; margin-left: 5%;"></object>-->
+                                        <input type="submit" value="" style="background-image: url(/static/imgs/assets/continue-btn.svg)" class="createaccount-btn">
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="closebtn">x</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</div>
 </body>
 </html>
